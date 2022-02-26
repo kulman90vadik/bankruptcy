@@ -1,0 +1,35 @@
+.social {
+    &__item {
+        margin-right: 7px;
+    }
+
+    &__link {
+        outline: transparent;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $blue-lite;
+    }
+
+    &__icon {
+        margin: auto;
+        fill: #fff;
+        &--vk {
+            width: 18px;
+            height: 10px;
+        }
+        &--yotube {
+            width: 19px;
+            height: 13px;
+        }
+        &--insta {
+            width: 17px;
+            height: 17px;
+        }
+        &--ok {
+            width: 11px;
+            height: 17px;
+        }
+    }
+}

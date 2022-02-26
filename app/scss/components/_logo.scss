@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    outline: transparent;
+    max-width: 238px;   
+    width: 100%;
+    height: 64px;
+
+    &__images {
+        object-fit: cover;
+        width: 100%;
+    }
+}
