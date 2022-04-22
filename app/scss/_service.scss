@@ -1,0 +1,66 @@
+.service {
+    background-color: #fff;
+    padding: 45px 0;
+    margin-bottom: 45px;
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 299px;
+        width: 100%;
+        position: relative;
+        padding-left: 63px;
+        font-weight: 400;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: $bluee;
+        }
+        &:not(:last-child) {
+            margin-right: 100px;
+        }
+
+        mark {
+            background-color: transparent;
+            font-weight: 600;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            @include bg;
+            width: 16px;
+            height: 16px;
+            left: 14px;
+            top: 14px;
+            z-index: 5;
+        }
+
+        &--installment {
+            &::before {
+                background-image: url(../images/installment.png);
+
+            }
+        }
+        &--materiel {
+            &::before {
+                background-image: url(../images/materiel.png);
+
+            }
+        }
+        &--value {
+            &::before {
+                background-image: url(../images/value.png);
+
+            }
+        }
+    }
+}
